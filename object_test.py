@@ -10,10 +10,10 @@ class Time:
         self.minutes = minutes
         self.seconds = seconds
         
-def convert_to_seconds(t):
-    minutes = t.hours * 60 + t.minutes
-    seconds = minutes * 60 + t.seconds
-    print(seconds)
+    def convert_to_seconds(self):
+        minutes = self.hours * 60 + self.minutes
+        seconds = minutes * 60 + self.seconds
+        print(seconds)
 
 if __name__ == '__main__':
     import doctest
